@@ -1,0 +1,11 @@
+version: '3'
+services:
+  hotel-app:
+    build: .
+    ports:
+      - "8502:8502"   # app ka port, agar alag ho to adjust karo
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: hoteldb
