@@ -3,5 +3,5 @@ services:
   hotel-app:
     build: .
     ports:
-      - "8502:8502"   # app ka port, agar alag ho to adjust karo
+      - "8501:8501"   # app ka port, agar alag ho to adjust karo
   
