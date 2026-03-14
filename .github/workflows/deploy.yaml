@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
 
           script: |
-            cd /home/ubuntu/Event-Management-Planner
+            cd /home/ubuntu/hotel-booking-app
             git pull origin main
             docker-compose down
             docker-compose up -d --build
